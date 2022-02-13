@@ -330,6 +330,38 @@ header{
 
   }
 
+  .short-url-wrapper{
+    transform: translateY(-4rem);
+  
+    .short-url-container{
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 1rem 2rem;
+
+      p{
+        margin-right: auto;
+        color: #000;
+        font-weight: 500;
+        font-size: 1.2rem;
+      }
+
+      a{
+        color: var(--Cyan);
+        font-weight: 500;
+        font-size: 1.2rem;
+      }
+
+      .btn{
+        border-radius: 8px;
+        font-size: 1rem;
+      }
+    }
+
+  }
+
   h2, .feature-sub{
     text-align: center;
     max-width: 50%;

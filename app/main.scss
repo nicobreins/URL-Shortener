@@ -48,6 +48,10 @@ body{
     color: #fff;
     background-color: hsl(176, 63%, 77%);
   }
+
+  &.active{
+    background-color: var(--Dark-Violet);
+  }
 }
 
 h1,h2, h3{
@@ -340,6 +344,7 @@ header{
       background-color: #fff;
       border-radius: 8px;
       padding: 1rem 2rem;
+      margin-bottom: 1rem;
 
       p{
         margin-right: auto;

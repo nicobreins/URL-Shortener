@@ -33,6 +33,9 @@ body * {
   color: #fff;
   background-color: #9fe9e4;
 }
+.btn.active {
+  background-color: var(--Dark-Violet);
+}
 
 h1, h2, h3 {
   color: var(--Dark-Violet);
@@ -320,6 +323,7 @@ header .hero-sec article p {
   background-color: #fff;
   border-radius: 8px;
   padding: 1rem 2rem;
+  margin-bottom: 1rem;
 }
 .features .short-url-wrapper .short-url-container p {
   margin-right: auto;

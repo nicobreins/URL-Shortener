@@ -274,6 +274,25 @@ header{
     .input-container{
       min-width: 72%;
 
+      #error-msg{
+        color: var(--Red);
+        margin-top: .5rem;
+        display: none;
+      }
+
+      &.active{
+        input{
+          outline: 2px var(--Red) solid;
+          border-radius: .6rem;
+        }
+        
+
+        #error-msg{
+          display: inline-block;
+        }
+      }
+
+
       input{
         width: 100%;
         padding: 1.2rem 2rem;

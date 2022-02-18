@@ -12,7 +12,9 @@ const menuToggle = () => {
     }
 }
 
-
+longUrlEl.oninput = () => {
+    document.getElementById('inp-cont').classList.remove('active');
+}
 
 const shortenUrl = (e) =>{
     e.preventDefault();
@@ -36,7 +38,7 @@ const shortenUrl = (e) =>{
         xhr.send();  
         
     }else{
-
+        document.getElementById('inp-cont').classList.add('active');
     }
     
 }

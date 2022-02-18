@@ -251,6 +251,18 @@ header .hero-sec article p {
 .features form.url-container .input-container {
   min-width: 72%;
 }
+.features form.url-container .input-container #error-msg {
+  color: var(--Red);
+  margin-top: 0.5rem;
+  display: none;
+}
+.features form.url-container .input-container.active input {
+  outline: 2px var(--Red) solid;
+  border-radius: 0.6rem;
+}
+.features form.url-container .input-container.active #error-msg {
+  display: inline-block;
+}
 .features form.url-container .input-container input {
   width: 100%;
   padding: 1.2rem 2rem;

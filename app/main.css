@@ -250,11 +250,15 @@ header .hero-sec article p {
 }
 .features form.url-container .input-container {
   min-width: 72%;
+  position: relative;
 }
 .features form.url-container .input-container #error-msg {
   color: var(--Red);
   margin-top: 0.5rem;
   display: none;
+  position: absolute;
+  left: 0;
+  bottom: -2rem;
 }
 .features form.url-container .input-container.active input {
   outline: 2px var(--Red) solid;

@@ -3,6 +3,8 @@ const shortUrlInEl = document.getElementById('short-url-rec');
 const expression = /[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/gi;
 const regex = new RegExp(expression);
 
+// resolve the api issue
+
 const menuToggle = () => {
     const menu = document.getElementById('mob-menu');
     if(menu.classList.contains('active')){
@@ -47,18 +49,7 @@ const copyUrl = (e) => {
     /* Get the text field */
     var copyText = e.target.previousSibling;
 
-    // console.log(copyText);
-  
-    /* Select the text field */
-    // copyText.select();
-    // copyText.setSelectionRange(0, 99999); /* For mobile devices */
-  
-     /* Copy the text inside the text field */
     navigator.clipboard.writeText(copyText.innerHTML);
-  
-    /* Alert the copied text */
-    // alert("Copied the text: " + copyText.innerHTML);
-
     e.target.innerHTML = "Copied!";
     e.target.classList.add('active');
 

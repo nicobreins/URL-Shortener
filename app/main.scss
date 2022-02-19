@@ -273,11 +273,15 @@ header{
 
     .input-container{
       min-width: 72%;
+      position: relative;
 
       #error-msg{
         color: var(--Red);
         margin-top: .5rem;
         display: none;
+        position: absolute;
+        left: 0;
+        bottom: -2rem;
       }
 
       &.active{

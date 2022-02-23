@@ -346,6 +346,8 @@ header .hero-sec article p {
   color: #000;
   font-weight: 500;
   font-size: 1.2rem;
+  max-width: 80%;
+  overflow-wrap: anywhere;
 }
 .features .short-url-wrapper .short-url-container a {
   color: var(--Cyan);
